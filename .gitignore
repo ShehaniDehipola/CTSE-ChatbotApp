@@ -1,0 +1,32 @@
+# Python cache
+__pycache__/
+*.py[cod]
+*.so
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Virtual environment
+env/
+venv/
+.venv/
+
+# FAISS index files
+*.faiss
+*.pkl
+
+# Model cache (optional)
+*.bin
+
+# Output files
+*.mp4
+*.log
+
+# OS / Editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Gradio temp
+gradio_cached_examples/
