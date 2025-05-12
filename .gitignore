@@ -1,32 +1,30 @@
-# Python cache
+# Ignore FAISS files only, not the folder
+embeddings/**/*.faiss
+embeddings/**/*.pkl
+
+# Ignore Gradio temp files
+.gradio/
+gradio_cached_examples/
+
+# Ignore notebook checkpoints and Python cache
+.ipynb_checkpoints/
 __pycache__/
-*.py[cod]
+*.pyc
+*.pyo
 *.so
 
-# Jupyter Notebook checkpoints
-.ipynb_checkpoints/
-
-# Virtual environment
+# Ignore virtual environments
 env/
 venv/
 .venv/
 
-# FAISS index files
-*.faiss
-*.pkl
-
-# Model cache (optional)
+# Ignore binary/model data
 *.bin
-
-# Output files
-*.mp4
 *.log
+*.mp4
 
-# OS / Editor files
+# OS/editor-specific
 .DS_Store
 Thumbs.db
 .vscode/
 .idea/
-
-# Gradio temp
-gradio_cached_examples/
